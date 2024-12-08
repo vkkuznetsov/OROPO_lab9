@@ -28,11 +28,11 @@ pip install -r req.txt
 4. Проверка конфигурации (config/settings.yml)  
 Укажите хост и порт на котором запустится Мессенджер, и укажите хост и порт на котором работает Redis  
 По дефолту это localhost:8000 и localhost:6369  
-Если редиса нет то на windows ставится через wsl
+Если редиса нет то на windows ставится через wsl2
 ```bash
 sudo apt install redis-server 
 ```
-На Linux эта же команда
+На Linux эта же команда  
 4. Запуск приложения
 ```bash
 python main.py
