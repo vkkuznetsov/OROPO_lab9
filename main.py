@@ -21,6 +21,9 @@ class MainHandler(tornado.web.RequestHandler):
 
 
 class ChatWebSocket(tornado.websocket.WebSocketHandler):
+    def check_origin(self, origin):
+        return True
+
     def open(self):
         self.id = self.get_argument("id", None)
         if not self.id:
